@@ -1,21 +1,32 @@
-﻿int V1 = 5,  
-    V2 = 7,  
-    V3 = 12; 
-int cont = 0;
+﻿int cont = 0;
 int S1 = 0, t = 0;
 int D = 0;
+
 Console.Clear();
 Console.WriteLine("Задача : Сколько раз пробежит Собака между друзьями которые идут друг другу на встречу с разной скоростью");
 Console.WriteLine();
-Console.WriteLine("Скорость одного 5, другого 7, а собаки 12 км/ч");
+Console.WriteLine("Для начала введите данные: ");
 Console.WriteLine();
+
 Console.Write("Введите Имя собаки, ");
 string AS = Console.ReadLine();
 
 Console.Write("Введите растояние между друзьями, ");
-int S = Console.ToInt32(Console.ReadLine());
+int S = Convert.ToInt32(Console.ReadLine());
 
+Console.Write("Введите скорость первого друга, ");
+int V1 = Convert.ToInt32(Console.ReadLine());
 
+Console.Write("Введите скорость второго друга, ");
+int V2 = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Введите скорость собаки, ");
+int V3 = Convert.ToInt32(Console.ReadLine());
+
+Console.Clear();
+Console.WriteLine($"Скорость одного {V1}, другого {V2}, а собаки {V3} ");
+Console.WriteLine($"Растояние между друзьми {S} ");
+Console.WriteLine();
 
 while(S > 20)
 {
